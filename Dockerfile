@@ -1,4 +1,4 @@
-FROM python:latest
+FROM python:3.6
 LABEL maintainer "Atsushi Harada <atsushi9.harada@lixil.com>"
 
 RUN apt-get update && \
@@ -11,3 +11,4 @@ RUN npm update && \
     npm install --save serverless-python-requirements
 
 RUN pip install awscli
+RUN sls plugin install -n serverless-python-requirements
