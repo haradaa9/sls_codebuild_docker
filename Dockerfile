@@ -11,4 +11,3 @@ RUN npm update && \
     npm install --save serverless-python-requirements
 
 RUN pip install awscli
-RUN sls plugin install -n serverless-python-requirements
